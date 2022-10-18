@@ -24,12 +24,13 @@ export default {
 
 html, body {
   height: 100%;
-
+background: var(--bg) !important;
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  
 }
 /*
   6. Improve media defaults
@@ -58,7 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 :root {
-  --bg: linear-gradient(130.77deg, #2C2C45 4%, #232339 30.16%);
+  --bg: #232339;
   --inactive: #8B8B98;
   --active: white;
   --grey: #5B5B6C;

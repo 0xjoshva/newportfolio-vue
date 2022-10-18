@@ -1,15 +1,19 @@
 <template>
 <HomeLanding/>
-<TheNavbar/>
+<HomeTestimonial/>
 </template>
 
 <script>
 import HomeLanding from "@/components/HomeLanding.vue"
+import HomeTestimonial from "@/components/HomeTestimonial.vue"
 import TheNavbar from "@/components/TheNavbar.vue"
 export default {
   components: {
-    HomeLanding, TheNavbar,
+    HomeLanding, HomeTestimonial, TheNavbar,
   },
 
 }
 </script>
+<style>
+
+</style>
