@@ -23,7 +23,7 @@ export default {
         {
           id: 1,
           name: "Crypto Exchange",
-          imgURL: "https://raw.githubusercontent.com/0xjoshva/cryptoexchange/main/src/assets/logo2.png",
+          image: "https://raw.githubusercontent.com/0xjoshva/cryptoexchange/main/src/assets/logo2.png",
         },
         {
           id: 2,
@@ -32,6 +32,7 @@ export default {
         {
           id: 3,
           name: "Real Estate",
+          image: "https://github.com/0xjoshva/realestate/blob/main/assets/sterlinglogoonly.png?raw=true",
           
         }
         ,

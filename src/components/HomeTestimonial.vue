@@ -3,9 +3,16 @@
     <div class="wrapper">
       <h1>My testimonials</h1>
 
+      <!-- homemade carousel -->
       <div ref="container" id="container">
         <div class="card"></div>
-        <div v-for="card in cards" v-bind:key="card.id" class="card">{{card.name}}</div>
+        <div v-for="card in cards" v-bind:key="card.id" class="card">
+          <div class="head">
+            <img v-bind:src="card.image" alt="" id="profile-pic" />
+            <p class="name">{{ card.name }}</p>
+          </div>
+          <p class="message">{{ card.message }}</p>
+        </div>
         <div class="card"></div>
       </div>
       <div class="overlay" alt=""></div>
@@ -23,33 +30,51 @@ export default {
       cards: [
         {
           id: 1,
+          image:
+            "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/jason.jpg?raw=true",
           name: "Jason Wandrag",
-          message: " Joshua Steed has shown great dedication to constantly improving himself and his work. He is consistent and hardworking, which shows in the quality of work he produces. ",
+          message:
+            " Joshua Steed has shown great dedication to constantly improving himself and his work. He is consistent and hardworking, which shows in the quality of work he produces. ",
         },
         {
           id: 2,
-          name: 'Vusumzi Msengana',
-          message: "Joshua is a hardworking and consistent person, he likes thinking outside the box and has great creative abilities."
+          image:
+            "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/vusumzi.jpg?raw=true",
+          name: "Vusumzi Msengana",
+          message:
+            "Joshua is a hardworking and consistent person, he likes thinking outside the box and has great creative abilities.",
         },
         {
           id: 3,
+          image:
+            "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/lihle.jpg?raw=true",
           name: "Lihle Goliath",
-          message: "Focused and diligent to his work. Has a great eye for creativity and visualization towards his ideas, this means he knows what he want in life. He would be a great assert wherever he goes.",
+          message:
+            "Focused and diligent to his work. Has a great eye for creativity and visualization towards his ideas, this means he knows what he want in life. He would be a great assert wherever he goes.",
         },
         {
           id: 4,
           name: "Sindile Kula",
-          message: "Joshua is a bright young man with a creative mind. He like to accomplish things at his own pace and according to his own preferences. He is highly diligent and hardworking when it comes to his career.",
+          image:
+            "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/sindile.jpg?raw=true",
+          message:
+            "Joshua is a bright young man with a creative mind. He like to accomplish things at his own pace and according to his own preferences. He is highly diligent and hardworking when it comes to his career.",
         },
         {
           id: 5,
+          image:
+            "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/raaid.jpg?raw=true",
           name: "Raaid Abdullatief",
-          message: "One of the most hardworking and committed people I've worked with. You can see the passion in his projects as you scroll down the page. Always a pleasure to work with. ",
+          message:
+            "One of the most hardworking and committed people I've worked with. You can see the passion in his projects as you scroll down the page. Always a pleasure to work with. ",
         },
         {
           id: 6,
+          image:
+            "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/tristan.jpg?raw=true",
           name: "Tristan Daniels",
-          message: " Joshua is a passionate and goal-driven person. He always focuses on the task at hand and works to the best of his ability.",
+          message:
+            " Joshua is a passionate and goal-driven person. He always focuses on the task at hand and works to the best of his ability.",
         },
       ],
     };
@@ -85,6 +110,9 @@ h1 {
   background: var(--panel);
   border-radius: 7px;
   z-index: 1;
+  padding: 1rem;
+  font-family: "Poppins";
+  box-shadow:10px 0px 0px 0px #1b1b3062;
 }
 #container {
   display: flex;
@@ -141,6 +169,28 @@ h1 {
   transform: scale(1.3);
 }
 .buttoncontainer button:hover {
-  
+}
+
+#profile-pic {
+  height: 72px;
+  width: 72px;
+
+  border-radius: 3px;
+  box-shadow: -5px -5px 0px 0px #1b1b3062;
+}
+.head {
+  display: flex;
+}
+.message {
+  padding-top: 1rem;
+  color: var(--text);
+}
+.name {
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  padding-left: 1rem;
 }
 </style>
