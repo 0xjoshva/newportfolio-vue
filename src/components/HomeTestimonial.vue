@@ -4,7 +4,9 @@
       <h1>My testimonials</h1>
 
       <div ref="container" id="container">
+        <div class="card"></div>
         <div v-for="card in cards" v-bind:key="card.id" class="card">{{card.name}}</div>
+        <div class="card"></div>
       </div>
       <div class="overlay" alt=""></div>
     </div>
@@ -15,7 +17,6 @@
   </section>
 </template>
 <script>
-import '@splidejs/vue-splide/css';
 export default {
   data() {
     return {
@@ -65,7 +66,7 @@ export default {
 </script>
 <style scoped>
 section {
-  height: 130vh;
+  height: 50vh;
 }
 h1 {
   width: 40%;
@@ -138,5 +139,8 @@ h1 {
 }
 .buttoncontainer button:active {
   transform: scale(1.3);
+}
+.buttoncontainer button:hover {
+  
 }
 </style>

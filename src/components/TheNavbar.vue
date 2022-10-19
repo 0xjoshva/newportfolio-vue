@@ -12,8 +12,9 @@
         </div>
         <router-link to="/contact" class="router-link button"
           ><p>Hire me</p>
-          <img src="../assets/arrow.svg" alt=""
-        /></router-link>
+          <!-- <img src="../assets/arrow.svg" alt=""
+        /> -->
+      </router-link>
       </div>
     </nav>
 </template>
@@ -63,15 +64,24 @@ a {
 .button {
   font-size: 1.1rem;
   padding: 0.4rem 1.4rem;
-  padding-right: 0.8rem;
-  background: var(--grey);
-  color: white;
+  /* padding-right: 0.8rem; */
+  border:2px solid var(--panel);
+  color: var(--text);
   border-radius: 30px;
   display: flex;
   column-gap: 0.4rem;
 }
 .router-link-active {
   color: var(--active);
+  font-weight: 500;
 }
-
+.router-link{
+    transition: all .2s ease-in-out;
+    text-align: right;
+    color: var(--inactive);
+}
+.router-link-active{
+    font-weight: 500;
+    color: var(--active);
+}
 </style>
