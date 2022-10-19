@@ -5,7 +5,7 @@
       <div class="wrapper">
         <div class="icontainer">
           <div class="item">
-            <div class="front card-content">
+            <div class="front card-content front1">
               <div class="head">
                 <img src="../assets/designcourse101.png" alt="" />
                 <p class="title">DesignCourse</p>
@@ -15,10 +15,10 @@
                 <p class="date">Oct 2022</p>
               </div>
             </div>
-            <div class="back card-content">I did a UX DESIGN COURSE</div>
+            <div class="back card-content back1">I did a UX DESIGN COURSE</div>
           </div>
           <div class="item">
-            <div class="front card-content">
+            <div class="front card-content front4">
               <div class="head">
                 <img src="../assets/camst.png" alt="" />
                 <p class="title">Cape Academy</p>
@@ -28,7 +28,7 @@
                 <p class="date">Jan 2017 - Dec 2021</p>
               </div>
             </div>
-            <div class="back card-content">I did a UX DESIGN COURSE</div>
+            <div class="back card-content back4">I did a UX DESIGN COURSE</div>
           </div>
         </div>
         <div class="item">
@@ -45,7 +45,7 @@
           <div class="back card-content">I did a UX DESIGN COURSE</div>
         </div>
         <div class="item">
-          <div class="front card-content">
+          <div class="front card-content front2">
             <div class="head">
               <img src="../assets/aws.png" alt="" />
               <p class="title">Amazon Web Services</p>
@@ -55,7 +55,7 @@
               <p class="date">Coming soon...</p>
             </div>
           </div>
-          <div class="back card-content">I did a UX DESIGN COURSE</div>
+          <div class="back card-content back2">I did a UX DESIGN COURSE</div>
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@ section {
   background: rgb(46 46 72);
   width: inherit;
   height: inherit;
-  transition: 0.5s;
+  transition: 1s;
   position: absolute;
   z-index: 1;
   padding: 1rem;
@@ -167,7 +167,7 @@ section {
 }
 .card-content {
   /* box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.281); */
-  transition: all 0.5s;
+  transition: all 1s;
 
   position: absolute;
   top: 0;
@@ -176,4 +176,23 @@ section {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+.back1{
+    border-top-left-radius: 12px;
+}
+.front1{
+    border-top-left-radius: 12px;
+}
+.back4{
+    border-bottom-left-radius: 12px;
+}
+.front4{
+    border-bottom-left-radius: 12px;
+}
+.back2{
+    border-top-right-radius: 12px;
+}
+.front2{
+    border-top-right-radius: 12px;
+}
+
 </style>
