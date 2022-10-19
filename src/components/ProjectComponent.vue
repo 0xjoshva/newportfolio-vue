@@ -3,7 +3,7 @@
     <div class="container">
       <div class="item" v-for="project in projects" v-bind:key="project.id">
         <div class="wrapper">
-        <img src="https://raw.githubusercontent.com/0xjoshva/cryptoexchange/main/src/assets/logo2.png" alt="logo" class="logo">
+        <img v-bind:src="project.image" alt="logo" class="logo">
         
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" filter="opacity(.3)" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -28,17 +28,18 @@ export default {
         {
           id: 2,
           name: 'E-Commerce',
+          image: 'https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/a9e221a29778e5771a2617991bec29f74259f253/src/assets/ecommerce.svg',
         },
         {
           id: 3,
           name: "Real Estate",
           image: "https://github.com/0xjoshva/realestate/blob/main/assets/sterlinglogoonly.png?raw=true",
-          
         }
         ,
         {
           id: 4,
           name: "Social Media",
+          image: "https://github.com/0xjoshva/newportfolio-vue/blob/main/src/assets/twitter.png?raw=true",
           
         }
       ],
@@ -107,5 +108,9 @@ justify-content: center;
 align-content: center;
 border-top-left-radius: 8px;
 border-bottom-left-radius: 8px;
+}
+.logo:nth-of-type(4){
+  width: 64px;
+  height: 64px;
 }
 </style>
