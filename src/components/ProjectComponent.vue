@@ -33,7 +33,7 @@ export default {
         {
           id: 3,
           name: "Real Estate",
-          image: "https://github.com/0xjoshva/realestate/blob/main/assets/sterlinglogoonly.png?raw=true",
+          image: "https://github.com/0xjoshva/newportfolio-vue/blob/main/src/assets/newreal.png?raw=true",
         }
         ,
         {
