@@ -6,7 +6,10 @@
         <div class="wrapper">
           <img v-bind:src="project.image" alt="logo" class="logo" />
         </div>
+
+        <p class="project">{{project.name}}</p>
         <svg v-show="hover === project.id"
+        
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-chevron-right"
           filter="opacity(.3)"
@@ -90,8 +93,8 @@ section {
   color: white;
   background: var(--panel);
   border-radius: 8px;
-  transition: 0.4s transform cubic-bezier(0.18, 0.89, 0.32, 1.28),
-    0.4s box-shadow ease-in-out, 0.4s scale ease-in-out, 0.1s filter ease-in-out;
+  transition: 0.1s transform ease-in-out,
+    0.4s box-shadow ease-in-out, 0.1s scale ease-in-out, 0.3s filter ease-in-out;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,16 +103,12 @@ section {
 }
 
 .item:hover {
-  transform: translateY(-5px);
-  scale: 1.02;
   filter: brightness(110%);
-  box-shadow: 6px 8px 0px 0px #1b1b3062;
 }
 .item:active {
-  transform: translate(20px, -5px);
-  scale: 1.02;
+  transform: translate(20px, 0px);
 
-  box-shadow: 6px 8px 0px 0px #1b1b3062;
+  box-shadow: -8px 8px 0px 0px #1b1b3062;
 }
 .icon .icon-tabler .icon-tabler-chevron-right {
 }

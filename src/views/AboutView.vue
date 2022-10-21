@@ -25,7 +25,6 @@ font-size: 36px;
 line-height: 54px;
 width: 40%;
 padding-top: 5rem;
-padding-bottom: 1rem;
 margin: 0 auto;
 color: white;
 }

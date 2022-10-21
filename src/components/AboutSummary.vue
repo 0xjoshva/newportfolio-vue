@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="summary">
-    <h1 id="header">Summary</h1>
+    <!-- <h1 id="header">Summary</h1> -->
     <div class="paragraphs">
     <p>
       I am an aspiring web developer who is creative, self-motivated and
@@ -30,7 +30,6 @@ export default {};
 section{
   height: fit-content;
   width: 100%;
-  padding-bottom: 2rem;
 }
 .summary{
   width: 40%;
@@ -49,6 +48,6 @@ color: white;
     display: flex;
     flex-direction: column;
      row-gap: 1rem;
-  padding-top: .3rem;
+  padding-top: 1.3rem;
 }
 </style>

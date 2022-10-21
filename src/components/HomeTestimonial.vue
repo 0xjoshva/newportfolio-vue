@@ -5,7 +5,7 @@
 
       <!-- homemade carousel -->
       <div ref="container" id="container">
-        <div class="card"></div>
+        <div class="card card0"></div>
         <div v-for="card in cards" v-bind:key="card.id" class="card">
           <div class="head">
             <img v-bind:src="card.image" alt="" id="profile-pic" />
@@ -13,7 +13,7 @@
           </div>
           <p class="message">{{ card.message }}</p>
         </div>
-        <div class="card"></div>
+        <div class="card card0"></div>
       </div>
       <div class="overlay" alt=""></div>
     </div>
@@ -192,5 +192,8 @@ h1 {
   align-self: center;
   justify-self: center;
   padding-left: 1rem;
+}
+.card0{
+  opacity: .4;
 }
 </style>

@@ -24,7 +24,7 @@
     </div>
 </div>
 </Footer>
-<div class="right"><p>Copyright Joshua Steed 2022</p></div>
+<div class="right"><p>Copyright © All Rights Reserved</p></div>
 </template>
 <script>
 export default {

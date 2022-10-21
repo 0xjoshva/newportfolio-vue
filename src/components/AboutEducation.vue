@@ -15,7 +15,19 @@
                 <p class="date">Oct 2022</p>
               </div>
             </div>
-            <div class="back card-content back1">I did a UX DESIGN COURSE</div>
+            <div class="back card-content back1">
+              <div class="row">
+              <ul>
+                <li>Design Fundamentals</li>
+                <li>Component Design</li>
+                <li>Prototyping</li>
+
+                <li>Layout Design</li>
+                <li>Responsive Design</li>
+                </ul>
+              </div>
+              <button class="downloadbtn">Certificate</button>
+            </div>
           </div>
           <div class="item">
             <div class="front card-content front4">
@@ -28,7 +40,16 @@
                 <p class="date">Jan 2017 - Dec 2021</p>
               </div>
             </div>
-            <div class="back card-content back4">I did a UX DESIGN COURSE</div>
+            <div class="back card-content back4">
+              <ul>
+                <li>Mathematics</li>
+                <li>Physics</li>
+                <li>Information Technology</li>
+                <li>Life Science</li>
+                <li>English HL</li>
+                <li>Afrikaans FAL</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="item">
@@ -38,11 +59,29 @@
               <p class="title">Life Choices Academy</p>
             </div>
             <div class="details">
-              <p class="course">UI/UX Design Course</p>
+              <p class="course">Web Development</p>
               <p class="date">Sep 2022</p>
             </div>
           </div>
-          <div class="back card-content">I did a UX DESIGN COURSE</div>
+          <div class="back card-content">
+            <div class="row">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>MySQL</li>
+              <li>Git</li>
+            </ul>
+            <ul>
+              <li>Vue.js</li>
+              <li>Node.js</li>
+              <li>Bootstrap</li>
+              <li>REST APIs</li>
+            </ul>
+            
+            </div>
+            <button class="downloadbtn">Certificate</button>
+          </div>
         </div>
         <div class="item">
           <div class="front card-content front2">
@@ -55,7 +94,15 @@
               <p class="date">Coming soon...</p>
             </div>
           </div>
-          <div class="back card-content back2">I did a UX DESIGN COURSE</div>
+          <div class="back card-content back2">
+            <ul>
+              <li>Cloud Concepts</li>
+              <li>Security and Compliance</li>
+              <li>Technology</li>
+              <li>Billing and Pricing</li>
+            </ul>
+            <button class="downloadbtn">Certificate</button>
+          </div>
         </div>
       </div>
     </div>
@@ -66,9 +113,9 @@ export default {};
 </script>
 <style scoped>
 section {
+  padding-top: 4rem;
   height: fit-content;
   width: 100%;
-  padding-bottom: 2rem;
 }
 .container {
   width: 40%;
@@ -176,23 +223,56 @@ section {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-.back1{
-    border-top-left-radius: 12px;
+.back1 {
+  border-top-left-radius: 12px;
 }
-.front1{
-    border-top-left-radius: 12px;
+.front1 {
+  border-top-left-radius: 12px;
 }
-.back4{
-    border-bottom-left-radius: 12px;
+.back4 {
+  border-bottom-left-radius: 12px;
 }
-.front4{
-    border-bottom-left-radius: 12px;
+.front4 {
+  border-bottom-left-radius: 12px;
 }
-.back2{
-    border-top-right-radius: 12px;
+.back2 {
+  border-top-right-radius: 12px;
 }
-.front2{
-    border-top-right-radius: 12px;
+.front2 {
+  border-top-right-radius: 12px;
 }
-
+.back {
+  font-family: "Poppins";
+  font-size: 12px;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row{
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+}
+ul{
+  padding: none !important;
+}
+.downloadbtn{
+  outline: none;
+  border: none;
+  background: none;
+  color: rgb(212, 212, 212);
+  box-shadow: 0px 0px 0px 3px #313193;
+  font-size: 15px;
+  border-radius: 26px;
+  cursor: pointer;
+  transition: ease-in-out .1s all;
+  margin-top: 1rem;
+  padding: .3rem .8rem;
+}
+.downloadbtn:active{
+  scale: 1.05;
+}
 </style>

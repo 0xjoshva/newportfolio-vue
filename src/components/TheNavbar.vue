@@ -63,7 +63,7 @@ a {
 }
 .button {
   font-size: 1.1rem;
-  padding: 0.4rem 1.4rem;
+  padding: 0.2rem 1.4rem;
   /* padding-right: 0.8rem; */
   border:2px solid var(--panel);
   color: var(--text);
