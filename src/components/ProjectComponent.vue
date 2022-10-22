@@ -18,9 +18,26 @@
           <p class="description">{{ project.description }}</p>
         </div>
         <svg
-          v-show="hover === project.id"
+          v-if="hover === project.id"
           xmlns="http://www.w3.org/2000/svg"
-          class="icon icon-tabler icon-tabler-chevron-right"
+          class="icon icon-tabler icon-tabler-chevron-right move"
+          filter="opacity(.3)"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          stroke-width="1"
+          stroke="#FFFFFF"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <polyline points="9 6 15 12 9 18" />
+        </svg>
+        <svg
+          v-else="hover !== project.id"
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-chevron-right invisible"
           filter="opacity(.3)"
           width="28"
           height="28"
@@ -38,7 +55,7 @@
       <div class="center">
       <h3>Thats all my featured projects</h3>
       <p>I only listed the projects that I find most interesting or enjoyed a lot. My GitHub is linked below — you can use that to see more of my work.</p>
-      <a href="https://github.com/0xjoshva" target="_blank">Check my github <img src="../assets/arrow.svg" alt=""
+      <a href="https://github.com/0xjoshva?tab=repositories" target="_blank">Check my github <img src="../assets/arrow.svg" alt=""
         /></a>
       </div>
     </div>
@@ -84,6 +101,8 @@ export default {
     };
     return {
       hover: false,
+      visibleClass: 'visible',
+      invisibleClass: 'invisible'
     };
   },
 
@@ -178,7 +197,7 @@ svg {
   color: white;
   font-weight: 500;
   font-size: 1.6rem;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 .center p{
   text-align: center;
@@ -196,5 +215,34 @@ svg {
   font-weight: 600;
   display: flex; 
   column-gap: .4rem;
+  transition: all ease-in-out .1s;
+}
+.center a:hover{
+column-gap: .8rem;
+}
+
+.visible{
+  visibility: visible;
+}
+.invisible{
+  visibility: hidden;
+}
+.move{
+  animation: .2s linear jumpfade;
+}
+@keyframes jumpfade{
+  0%{
+    transform: translateX(-20px) scale(10%);
+
+    opacity: 0;
+  }
+  50%{
+    transform: translateX(-10px) scale(10%);
+    opacity: 0.5;
+  }
+  100%{
+    transform: translateX(0px) scale(100%);
+    opacity: 1;
+  }
 }
 </style>
