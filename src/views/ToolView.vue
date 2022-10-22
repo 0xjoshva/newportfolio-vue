@@ -2,6 +2,8 @@
 <!-- calculator -->
 <!-- to-do list-->
 <!-- timer -->
+<!-- language translator -->
+<!-- messanger / shoutbox -->
 
 <template>
   <section>

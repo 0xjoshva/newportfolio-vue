@@ -1,15 +1,24 @@
 <template>
   <section>
     <div class="container">
-      <div class="item" v-for="project in projects" v-bind:key="project.id" ref="item"  @mouseover="hover = project.id"
-    @mouseleave="hover = null">
+      <div
+        class="item"
+        v-for="project in projects"
+        v-bind:key="project.id"
+        ref="item"
+        @mouseover="hover = project.id"
+        @mouseleave="hover = null"
+      >
         <div class="wrapper">
           <img v-bind:src="project.image" alt="logo" class="logo" />
         </div>
+        <div class="info">
+          <p class="project">{{ project.name }}</p>
 
-        <p class="project">{{project.name}}</p>
-        <svg v-show="hover === project.id"
-        
+          <p class="description">{{ project.description }}</p>
+        </div>
+        <svg
+          v-show="hover === project.id"
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-chevron-right"
           filter="opacity(.3)"
@@ -26,6 +35,12 @@
           <polyline points="9 6 15 12 9 18" />
         </svg>
       </div>
+      <div class="center">
+      <h3>Thats all my featured projects</h3>
+      <p>I only listed the projects that I find most interesting or enjoyed a lot. My GitHub is linked below — you can use that to see more of my work.</p>
+      <a href="https://github.com/0xjoshva" target="_blank">Check my github <img src="../assets/arrow.svg" alt=""
+        /></a>
+      </div>
     </div>
   </section>
 </template>
@@ -39,37 +54,40 @@ export default {
           name: "Crypto Exchange",
           image:
             "https://raw.githubusercontent.com/0xjoshva/cryptoexchange/main/src/assets/logo2.png",
+          description:
+            "A web3 platform giving insight on current crypto markets.",
         },
         {
           id: 2,
           name: "E-Commerce",
           image:
             "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/a9e221a29778e5771a2617991bec29f74259f253/src/assets/ecommerce.svg",
+          description:
+            "An e-commerce platform used for buying and selling electronic goods.",
         },
         {
           id: 3,
           name: "Real Estate",
           image:
             "https://github.com/0xjoshva/newportfolio-vue/blob/main/src/assets/newreal.png?raw=true",
+          description:
+            "A property listing platform used for buying/selling/renting out apartments and offices. ",
         },
         {
           id: 4,
-          name: "Social Media",
+          name: "Social Media App",
           image:
             "https://github.com/0xjoshva/newportfolio-vue/blob/main/src/assets/twitter.png?raw=true",
+          description: "A twitter clone I made for fun.",
         },
       ],
-  
-    }
-        return {
+    };
+    return {
       hover: false,
-    }
+    };
   },
 
-
-  methods: {
-  
-  },
+  methods: {},
 };
 </script>
 <style scoped>
@@ -89,12 +107,12 @@ section {
 }
 .item {
   width: 100%;
-  height: 8.3rem;
+  height: 9rem;
   color: white;
   background: var(--panel);
   border-radius: 8px;
-  transition: 0.1s transform ease-in-out,
-    0.4s box-shadow ease-in-out, 0.1s scale ease-in-out, 0.3s filter ease-in-out;
+  transition: 0.1s transform ease-in-out, 0.4s box-shadow ease-in-out,
+    0.1s scale ease-in-out, 0.3s filter ease-in-out;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -133,8 +151,50 @@ section {
   width: 46px;
   height: 46px;
 }
-svg{
-  filter: opacity(.2);
-
+svg {
+  filter: opacity(0.2);
+}
+.info {
+  width: 60%;
+  font-family: "Poppins";
+  position: relative;
+}
+.info .project {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.description {
+  margin-top: 0.4rem;
+  color: var(--text);
+  font-size: 1rem;
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.center h3{
+  font-family: 'poppins';
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding-top: 3rem;
+}
+.center p{
+  text-align: center;
+  width: 60%;
+  font-family: 'poppins';
+  color: var(--text);
+  margin-top: .6rem;
+}
+.center a{
+  margin-top: 1rem;
+  font-family: 'poppins';
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #7c7cdf;
+  font-weight: 600;
+  display: flex; 
+  column-gap: .4rem;
 }
 </style>

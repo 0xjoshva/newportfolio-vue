@@ -2,10 +2,14 @@
   <section>
    
     <div class="biography">
+      <transition name="fade">
+      
+      
       <h1>
         I'm Joshua Steed, I am an aspiring <br />
         front-end developer
       </h1>
+      </transition>
       <div class="paragraphs">
         <p>
           I am a young developer with an acute attention to detail, looking at
