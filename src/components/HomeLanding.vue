@@ -2,7 +2,7 @@
   <section>
    
     <div class="biography">
-      <transition name="fade">
+      <transition>
       
       
       <h1>

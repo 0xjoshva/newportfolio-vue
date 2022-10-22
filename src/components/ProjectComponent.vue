@@ -55,7 +55,7 @@
       <div class="center">
       <h3>Thats all my featured projects</h3>
       <p>I only listed the projects that I find most interesting or enjoyed a lot. My GitHub is linked below — you can use that to see more of my work.</p>
-      <a href="https://github.com/0xjoshva?tab=repositories" target="_blank">Check my github <img src="../assets/arrow.svg" alt=""
+      <a href="https://github.com/0xjoshva?tab=repositories" target="_blank">Check my github <img src="../assets/arrowlong.svg" alt=""
         /></a>
       </div>
     </div>
@@ -72,7 +72,7 @@ export default {
           image:
             "https://raw.githubusercontent.com/0xjoshva/cryptoexchange/main/src/assets/logo2.png",
           description:
-            "A web3 platform giving insight on current crypto markets.",
+            "A web3 platform which gives insight on current crypto markets.",
         },
         {
           id: 2,
@@ -106,7 +106,8 @@ export default {
     };
   },
 
-  methods: {},
+  methods: {
+  },
 };
 </script>
 <style scoped>
