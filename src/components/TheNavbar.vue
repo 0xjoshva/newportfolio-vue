@@ -4,11 +4,12 @@
 
       <div class="nav-container">
         <div class="router-links">
-          <router-link to="/about" class="router-link pages">About</router-link>
+          <!-- <router-link to="/tools" class="router-link pages">Tools</router-link> -->
+          <!-- <router-link to="/about" class="router-link pages">About</router-link> -->
           <router-link to="/projects" class="router-link pages"
             >Projects</router-link
           >
-          <router-link to="/tools" class="router-link pages">Tools</router-link>
+          <router-link to="/blog" class="router-link pages">Blog</router-link>
         </div>
         <router-link to="/contact" class="router-link button"
           ><p>Hire me</p>
@@ -83,5 +84,8 @@ a {
 .router-link-active{
     font-weight: 500;
     color: var(--active);
+}
+.router-link:hover{
+    color:white;
 }
 </style>

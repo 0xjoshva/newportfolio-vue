@@ -17,9 +17,10 @@
     </div>
     <div class="nav">
         <router-link to="/" class="router-link">Home</router-link>
-        <router-link to="/about" class="router-link">About</router-link>
+        <router-link to="blog" class="router-link">Blog</router-link>
         <router-link to="/projects" class="router-link">Projects</router-link>
-        <router-link to="/tools" class="router-link">Tools</router-link>
+        <!-- <router-link to="/tools" class="router-link">Tools</router-link> -->
+        <!-- <router-link to="/about" class="router-link">About</router-link> -->
         <router-link to="/contact" class="router-link">Contact</router-link>
     </div>
 </div>
@@ -126,5 +127,8 @@ font-family: 'Poppins';
     flex-direction: column;
     row-gap: .2rem;
     font-size: 1rem;
+}
+.router-link:hover{
+    color:white;
 }
 </style>
