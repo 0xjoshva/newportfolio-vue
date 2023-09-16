@@ -75,7 +75,7 @@ export default {
           id: 1,
           name: "Card Game",
           image:
-            "https://i.postimg.cc/XJttrDH6/carddds.png",
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/CARDS.svg",
           description:
             "A card game for one player, drawing cards to win rounds against a computer.",
           link: "https://codepen.io/0xjoshva/full/GRXdodb",
@@ -164,7 +164,7 @@ section {
 }
 .logo {
   width: auto;
-  height: 60px;
+  height: 53px;
   display: flex;
   align-self: center;
 }
