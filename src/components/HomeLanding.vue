@@ -22,9 +22,9 @@
         </p>
         <p>
           In 2023 I landed a job at JustSolve as an intern software developer
-          where I got the opportunity to work on a  variety of projects of projects,
-          collaborate within teams and continue to learn and increase my
-          coding proficiency.
+          where I got the opportunity to work on a variety of projects of
+          projects, collaborate within teams and continue to learn and increase
+          my coding proficiency.
         </p>
         <p>
           Aside from development, I enjoy going to the gym everyday to stay
@@ -33,10 +33,11 @@
         </p>
       </div>
       <div class="icons">
-        <a href=""><img src="../assets/linkedin.svg" alt="" /></a>
-        <a href=""><img src="../assets/github.svg" alt="" /></a>
-        <a href="" class="dribble"
-          ><img src="../assets/dribbble.svg" alt=""
+        <a href="https://www.linkedin.com/in/0xjoshuasteed/" target="_blank"
+          ><img src="../assets/linkedin.svg" alt=""
+        /></a>
+        <a href="https://github.com/0xjoshva" target="_blank"
+          ><img src="../assets/github.svg" alt=""
         /></a>
       </div>
     </div>

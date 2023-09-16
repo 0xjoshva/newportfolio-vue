@@ -5,7 +5,7 @@
       <div class="paragraphs">
         <p>
           I am a self starter with a passion for development <br> view my full
-          resume here.
+          <a href="./" target="_blank">resume here</a>.
         </p>
       </div>
     </div>
