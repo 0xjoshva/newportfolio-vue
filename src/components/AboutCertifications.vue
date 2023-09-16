@@ -4,19 +4,151 @@
       <h1 id="header">Certifications</h1>
       <div class="wrapper">
         <div class="icontainer">
-          <div
-            class="item"
-            v-for="(certification, index) in certifications"
-            :key="index"
-          >
-            <div class="front card-content" :class="'front' + (index + 1)">
-              <div class="head">
-                <img :src="certification.image" alt="" />
-                <p class="title">{{ certification.title }}</p>
+          <div class="row">
+            <div class="item">
+              <div class="front card-content front1">
+                <div class="head">
+                  <img
+                    src="https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/aws.png"
+                    alt=""
+                    class="school-img"
+                  />
+                  <p class="title">Amazon Web Services</p>
+                </div>
+                <div class="details">
+                  <p class="course">Cloud Practitioner</p>
+                  <p class="date">Dec 2022</p>
+                </div>
               </div>
-              <div class="details">
-                <p class="course">{{ certification.course }}</p>
-                <p class="date">{{ certification.date }}</p>
+            </div>
+
+            <!-- Certification 2 -->
+            <div class="item">
+              <div class="front card-content front2">
+                <div class="head">
+                  <img
+                    src="https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/HackerRank.png"
+                    alt=""
+                    class="school-img"
+                  />
+                  <p class="title">HackerRank</p>
+                </div>
+                <div class="details">
+                  <p class="course">SQL Basic</p>
+                  <p class="date">Mar 2023</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certification 3 -->
+            <div class="item">
+              <div class="front card-content front3">
+                <div class="head">
+                  <img
+                    src="https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/HackerRank.png"
+                    alt=""
+                    class="school-img"
+                  />
+                  <p class="title">HackerRank</p>
+                </div>
+                <div class="details">
+                  <p class="course">SQL Intermediate</p>
+                  <p class="date">Mar 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Certification 4 -->
+            <div class="item">
+              <div class="front card-content front4">
+                <div class="head">
+                  <img
+                    src="https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/HackerRank.png"
+                    alt=""
+                    class="school-img"
+                  />
+                  <p class="title">HackerRank</p>
+                </div>
+                <div class="details">
+                  <p class="course">SQL Advanced</p>
+                  <p class="date">Mar 2023</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certification 5 -->
+            <div class="item">
+              <div class="front card-content front5">
+                <div class="head">
+                  <img
+                    src="https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/HackerRank.png"
+                    alt=""
+                    class="school-img"
+                  />
+                  <p class="title">HackerRank</p>
+                </div>
+                <div class="details">
+                  <p class="course">Cascading Style Sheets (CSS)</p>
+                  <p class="date">Mar 2023</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certification 6 -->
+            <div class="item">
+              <div class="front card-content front6">
+                <div class="head">
+                  <img
+                    src="https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/codecamp.png"
+                    alt=""
+                    class="school-img"
+                  />
+                  <p class="title codecamptitle">free <br> Code <br>Camp</p>
+                </div>
+                <div class="details">
+                  <p class="course">Responsive Web Design</p>
+                  <p class="date">Jan 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Certification 7 -->
+            <div class="item">
+              <div class="front card-content front7">
+                <div class="head">
+                  <img
+                    src="https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/codecamp.png"
+                    alt=""
+                    class="school-img"
+                  />
+                  <p class="title codecamptitle">free <br> Code <br>Camp</p>
+                </div>
+                <div class="details">
+                  <p class="course">
+                    JavaScript Algorithms and Data Structures
+                  </p>
+                  <p class="date">Jan 2023</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certification 8 -->
+            <div class="item">
+              <div class="front card-content front8">
+                <div class="head">
+                  <img
+                    src="https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/codecamp.png"
+                    alt=""
+                    class="school-img"
+                  />
+                  <p class="title codecamptitle">free <br> Code <br>Camp</p>
+                </div>
+                <div class="details">
+                  <p class="course">Front End Development Libraries</p>
+                  <p class="date">Feb 2023</p>
+                </div>
               </div>
             </div>
           </div>
@@ -33,49 +165,57 @@ export default {
       certifications: [
         {
           title: "Amazon Web Services",
-          image: "../assets/aws.png",
+          image:
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/aws.png",
           course: "Cloud Practitioner",
           date: "Dec 2022",
         },
         {
           title: "HackerRank",
-          image: "../assets/aws.png",
+          image:
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/HackerRank.png",
           course: "SQL Basic",
           date: "Mar 2023",
         },
         {
           title: "HackerRank",
-          image: "../assets/aws.png",
+          image:
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/HackerRank.png",
           course: "SQL Intermediate",
           date: "Mar 2023",
         },
         {
           title: "HackerRank",
-          image: "../assets/aws.png",
+          image:
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/HackerRank.png",
           course: "SQL Advanced",
           date: "Mar 2023",
         },
         {
           title: "HackerRank",
-          image: "../assets/aws.png",
+          image:
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/HackerRank.png",
           course: "Cascading Style Sheets (CSS)",
           date: "Mar 2023",
         },
         {
           title: "freeCodeCamp",
-          image: "../assets/aws.png",
+          image:
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/codecamp.png",
           course: "Responsive Web Design",
           date: "Jan 2023",
         },
         {
           title: "freeCodeCamp",
-          image: "../assets/aws.png",
+          image:
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/codecamp.png",
           course: "JavaScript Algorithms and Data Structures",
           date: "Jan 2023",
         },
         {
           title: "freeCodeCamp",
-          image: "../assets/aws.png",
+          image:
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/codecamp.png",
           course: "Front End Development Libraries",
           date: "Feb 2023",
         },
@@ -109,9 +249,9 @@ section {
 .item {
   width: 242px;
   height: 183px;
+  border-radius: 8px;
 }
 .item:nth-child(1) {
-  border-top-left-radius: 12px;
 }
 .icontainer {
   display: flex;
@@ -134,6 +274,7 @@ section {
   position: absolute;
   z-index: 1;
   padding: 1rem;
+  border-radius: 8px;
 }
 .back {
   background: rgb(40, 40, 71);
@@ -144,13 +285,7 @@ section {
   left: 0;
   transform: rotateY(180deg);
 }
-.item:hover .front {
-  transform: rotateY(180deg);
-  opacity: 0;
-}
-.item:hover .back {
-  transform: rotateY(0);
-}
+
 .title {
   font-weight: 500;
   font-size: 18px;
@@ -196,24 +331,7 @@ section {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-.back1 {
-  border-top-left-radius: 12px;
-}
-.front1 {
-  border-top-left-radius: 12px;
-}
-.back4 {
-  border-bottom-left-radius: 12px;
-}
-.front4 {
-  border-bottom-left-radius: 12px;
-}
-.back2 {
-  border-top-right-radius: 12px;
-}
-.front2 {
-  border-top-right-radius: 12px;
-}
+
 .back {
   font-family: "Poppins";
   font-size: 12px;
@@ -226,26 +344,23 @@ section {
 .row {
   display: flex;
   width: 100%;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+.row:nth-child(3) {
+display: flex;
+justify-content: START;
 }
 ul {
   padding: none !important;
 }
-.downloadbtn {
-  outline: none;
-  border: none;
-  background: none;
-  color: rgb(212, 212, 212);
-  box-shadow: 0px 0px 0px 3px #313193;
-  font-size: 15px;
-  border-radius: 26px;
-  cursor: pointer;
-  transition: ease-in-out 0.1s all;
-  margin-top: 1rem;
-  padding: 0.3rem 0.8rem;
+.school-img {
+  width: 71px;
+  height: 71px;
+  border-radius: 8px;
 }
-.downloadbtn:active {
-  scale: 1.05;
+.codecamptitle{
+  line-height: 22px;
 }
 </style>

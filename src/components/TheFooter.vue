@@ -3,14 +3,11 @@
     <div class="container">
       <div class="info">
         <div class="icons">
-          <a href=""><img src="../assets/linkedin.svg" alt="" /></a>
-          <a href=""><img src="../assets/github.svg" alt="" /></a>
-          <a href="" class="dribble"
-            ><img src="../assets/dribbble.svg" alt=""
-          /></a>
+          <a href="https://www.linkedin.com/in/0xjoshuasteed/" target="_blank"><img src="../assets/linkedin.svg" alt="" /></a>
+          <a href="https://github.com/0xjoshva" target="_blank"><img src="../assets/github.svg" alt="" /></a>
         </div>
         <div class="contact">
-          <p>cape town, south africa</p>
+          <p>cape town, western cape</p>
           <a href="mailto:joshuasteed123@gmail.com" id="email"
             >joshuasteed123@gmail.com</a
           >
