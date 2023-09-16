@@ -2,8 +2,7 @@
   <div class="heading">
     <h1>My projects</h1>
     <p>
-      Carefully picked projects, 
-      emphasizing <br /> the ones I enjoyed the most
+      A few recent projects
     </p>
   </div>
   <ProjectComponent />

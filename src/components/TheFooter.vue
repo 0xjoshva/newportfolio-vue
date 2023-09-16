@@ -25,7 +25,7 @@
     </div>
 </div>
 </Footer>
-<div class="right"><p>Copyright © All Rights Reserved</p></div>
+<div class="right"><p>built by me with </p><span class="heart">♥</span></div>
 </template>
 <script>
 export default {
@@ -72,11 +72,16 @@ a{
     color: var(--active);
 }
 .right{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #8B8B98;
+column-gap: .4rem;
 }
 .right p{
     font-size:1rem;
 color: #8B8B98;
-padding: 1rem;
+padding-block: 1rem;
 text-align: center;
 font-family: 'Poppins';
 }
@@ -130,5 +135,8 @@ font-family: 'Poppins';
 }
 .router-link:hover{
     color:white;
+}
+.heart{
+    font-size:20px;
 }
 </style>

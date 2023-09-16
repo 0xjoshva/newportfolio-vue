@@ -1,9 +1,10 @@
 <template>
   <h1 class="about-header">About me</h1>
   <AboutSummary/>
-  <AboutEducation/>
   <AboutExperience/>
+  <AboutEducation/>
   <AboutVolunteering/>
+  <AboutCertifications/>
   <AboutSkills/>
 </template>
 <script>
@@ -12,8 +13,9 @@ import AboutEducation from '@/components/AboutEducation.vue';
 import AboutExperience from '@/components/AboutExperience.vue';
 import AboutVolunteering from '@/components/AboutVolunteering.vue';
 import AboutSkills from '@/components/AboutSkills.vue';
+import AboutCertifications from '@/components/AboutCertifications.vue';
 export default {
-    components: { AboutSummary, AboutEducation, AboutExperience, AboutVolunteering, AboutSkills}
+    components: { AboutSummary, AboutEducation, AboutExperience, AboutVolunteering, AboutSkills, AboutCertifications }
 }
 </script>
 <style scoped>

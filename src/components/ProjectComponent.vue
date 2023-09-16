@@ -4,10 +4,11 @@
       <div
         class="item"
         v-for="project in projects"
-        v-bind:key="project.id"
+        :key="project.id"
         ref="item"
         @mouseover="hover = project.id"
         @mouseleave="hover = null"
+        @click="redirectToLink(project.link)"
       >
         <div class="wrapper">
           <img v-bind:src="project.image" alt="logo" class="logo" />
@@ -53,9 +54,13 @@
         </svg>
       </div>
       <div class="center">
-      <h3>Thats all my featured projects</h3>
-      <p>I only listed the projects that I find most interesting or enjoyed a lot. My GitHub is linked below — you can use that to see more of my work.</p>
-      <a href="https://github.com/0xjoshva?tab=repositories" target="_blank">Check my github <img src="../assets/arrowlong.svg" alt=""
+        <h3>Thats all my featured projects</h3>
+        <p>
+          I only listed projects that I have completed, alot of them are still works in progress. My GitHub is linked below — you can use that to see more of my
+          work.
+        </p>
+        <a href="https://github.com/0xjoshva?tab=repositories" target="_blank"
+          >Check my github <img src="../assets/arrowlong.svg" alt=""
         /></a>
       </div>
     </div>
@@ -68,45 +73,52 @@ export default {
       projects: [
         {
           id: 1,
-          name: "Crypto Exchange",
+          name: "Card Game",
           image:
-            "https://raw.githubusercontent.com/0xjoshva/cryptoexchange/main/src/assets/logo2.png",
+            "https://i.postimg.cc/XJttrDH6/carddds.png",
           description:
-            "A web3 platform which gives insight on current crypto markets.",
+            "A card game for one player, drawing cards to win rounds against a computer.",
+          link: "https://codepen.io/0xjoshva/full/GRXdodb",
         },
         {
           id: 2,
-          name: "E-Commerce",
+          name: "Tip Calculator",
           image:
             "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/a9e221a29778e5771a2617991bec29f74259f253/src/assets/ecommerce.svg",
           description:
-            "An e-commerce platform used for buying and selling electronic goods.",
+            "A handy tip calculator app to quickly and accurately calculate tips for your dining bills.",
+          link: "https://admirable-begonia-dfe568.netlify.app/"
         },
         {
           id: 3,
-          name: "Real Estate",
+          name: "Pomodoro Timer",
           image:
             "https://github.com/0xjoshva/newportfolio-vue/blob/main/src/assets/newreal.png?raw=true",
           description:
-            "A property listing platform used for buying/selling/renting out apartments and offices. ",
+            "A timer with dynamic settings and a progress circle display, perfect for work or study.",
+          link: "https://codepen.io/0xjoshva/full/YzOyJmm",
         },
         {
           id: 4,
-          name: "Social Media App",
+          name: "Quote Generator",
           image:
             "https://github.com/0xjoshva/newportfolio-vue/blob/main/src/assets/twitter.png?raw=true",
-          description: "A twitter clone I made for fun.",
+          description: "A tool for generating random quotes in a single click.",
+          link: "https://admirable-dodol-162f1a.netlify.app/"
         },
       ],
     };
     return {
       hover: false,
-      visibleClass: 'visible',
-      invisibleClass: 'invisible'
+      visibleClass: "visible",
+      invisibleClass: "invisible",
     };
   },
 
   methods: {
+    redirectToLink(link) {
+      window.open(link, "_blank");
+    },
   },
 };
 </script>
@@ -151,11 +163,10 @@ section {
 .icon .icon-tabler .icon-tabler-chevron-right {
 }
 .logo {
-  width: 46px;
-  height: 46px;
+  width: auto;
+  height: 60px;
   display: flex;
   align-self: center;
-  filter: brightness(1000%);
 }
 .wrapper {
   width: 15%;
@@ -188,60 +199,60 @@ svg {
   color: var(--text);
   font-size: 1rem;
 }
-.center{
+.center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.center h3{
-  font-family: 'poppins';
+.center h3 {
+  font-family: "poppins";
   color: white;
   font-weight: 500;
   font-size: 1.6rem;
   padding-top: 5rem;
 }
-.center p{
+.center p {
   text-align: center;
   width: 60%;
-  font-family: 'poppins';
+  font-family: "poppins";
   color: var(--text);
-  margin-top: .6rem;
+  margin-top: 0.6rem;
 }
-.center a{
+.center a {
   margin-top: 1rem;
-  font-family: 'poppins';
+  font-family: "poppins";
   font-size: 1.2rem;
   text-decoration: none;
   color: #7c7cdf;
   font-weight: 600;
-  display: flex; 
-  column-gap: .4rem;
-  transition: all ease-in-out .1s;
+  display: flex;
+  column-gap: 0.4rem;
+  transition: all ease-in-out 0.1s;
 }
-.center a:hover{
-column-gap: .8rem;
+.center a:hover {
+  column-gap: 0.8rem;
 }
 
-.visible{
+.visible {
   visibility: visible;
 }
-.invisible{
+.invisible {
   visibility: hidden;
 }
-.move{
-  animation: .2s linear jumpfade;
+.move {
+  animation: 0.2s linear jumpfade;
 }
-@keyframes jumpfade{
-  0%{
+@keyframes jumpfade {
+  0% {
     transform: translateX(-20px) scale(10%);
 
     opacity: 0;
   }
-  50%{
+  50% {
     transform: translateX(-10px) scale(10%);
     opacity: 0.5;
   }
-  100%{
+  100% {
     transform: translateX(0px) scale(100%);
     opacity: 1;
   }
