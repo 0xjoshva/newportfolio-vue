@@ -1,26 +1,30 @@
 <template>
   <section>
-   
     <div class="biography">
       <transition>
-      
-      
-      <h1>
-        I'm Joshua Steed, I am an aspiring <br />
-        front-end developer
-      </h1>
+        <h1>
+          I'm Joshua Steed, I am an aspiring <br />
+          software developer
+        </h1>
       </transition>
       <div class="paragraphs">
         <p>
-          I am a young developer with an acute attention to detail, looking at
+          I am a young developer with an keen attention to detail, looking at
           applications from all angles. My passions lie in UI/UX design and
-          building websites from the ground up.
+          building websites and software that add value.
         </p>
         <p>
-          I have just finished a 6-Month coding bootcamp at Life Choices Academy
-          where I learnt the fundamentals of full stack web development.
-          Currently an intern web developer at LC Studio where I continue to
-          upskill myself.
+          In 2022 I finished a 6-Month coding bootcamp at Life Choices Academy
+          where I learnt the fundamentals of full stack web development. And
+          then became an intern web developer at LC Studio where I continued to
+          upskill myself in various technologies like AWS Cloud, Wordpress, and
+          Web Frameworks(VueJS, ReactJS).
+        </p>
+        <p>
+          In 2023 I landed a job at JustSolve as an intern software developer
+          where I got the opportunity to work on a  variety of projects of projects,
+          collaborate within teams and continue to learn and increase my
+          coding proficiency.
         </p>
         <p>
           Aside from development, I enjoy going to the gym everyday to stay

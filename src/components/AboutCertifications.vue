@@ -4,25 +4,20 @@
       <h1 id="header">Certifications</h1>
       <div class="wrapper">
         <div class="icontainer">
-          <div class="item">
-            <div class="front card-content front2">
+          <div
+            class="item"
+            v-for="(certification, index) in certifications"
+            :key="index"
+          >
+            <div class="front card-content" :class="'front' + (index + 1)">
               <div class="head">
-                <img src="../assets/aws.png" alt="" />
-                <p class="title">Amazon Web Services</p>
+                <img :src="certification.image" alt="" />
+                <p class="title">{{ certification.title }}</p>
               </div>
               <div class="details">
-                <p class="course">Cloud Practitioner</p>
-                <p class="date">Dec 2022</p>
+                <p class="course">{{ certification.course }}</p>
+                <p class="date">{{ certification.date }}</p>
               </div>
-            </div>
-            <div class="back card-content back2">
-              <ul>
-                <li>Cloud Concepts</li>
-                <li>Security and Compliance</li>
-                <li>Technology</li>
-                <li>Billing and Pricing</li>
-              </ul>
-              <button class="downloadbtn">Certificate</button>
             </div>
           </div>
         </div>
@@ -30,8 +25,64 @@
     </div>
   </section>
 </template>
+
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      certifications: [
+        {
+          title: "Amazon Web Services",
+          image: "../assets/aws.png",
+          course: "Cloud Practitioner",
+          date: "Dec 2022",
+        },
+        {
+          title: "HackerRank",
+          image: "../assets/aws.png",
+          course: "SQL Basic",
+          date: "Mar 2023",
+        },
+        {
+          title: "HackerRank",
+          image: "../assets/aws.png",
+          course: "SQL Intermediate",
+          date: "Mar 2023",
+        },
+        {
+          title: "HackerRank",
+          image: "../assets/aws.png",
+          course: "SQL Advanced",
+          date: "Mar 2023",
+        },
+        {
+          title: "HackerRank",
+          image: "../assets/aws.png",
+          course: "Cascading Style Sheets (CSS)",
+          date: "Mar 2023",
+        },
+        {
+          title: "freeCodeCamp",
+          image: "../assets/aws.png",
+          course: "Responsive Web Design",
+          date: "Jan 2023",
+        },
+        {
+          title: "freeCodeCamp",
+          image: "../assets/aws.png",
+          course: "JavaScript Algorithms and Data Structures",
+          date: "Jan 2023",
+        },
+        {
+          title: "freeCodeCamp",
+          image: "../assets/aws.png",
+          course: "Front End Development Libraries",
+          date: "Feb 2023",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style scoped>
 section {

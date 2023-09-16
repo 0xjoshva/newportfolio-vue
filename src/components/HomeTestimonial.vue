@@ -1,28 +1,21 @@
 <template>
   <section>
-    <div class="wrapper">
-      <h1>My testimonials</h1>
-
-      <!-- homemade carousel -->
-      <div ref="container" id="container">
-        <div class="card card0"></div>
-        <div v-for="card in cards" v-bind:key="card.id" class="card">
-          <div class="head">
-            <img v-bind:src="card.image" alt="" id="profile-pic" />
-            <p class="name">{{ card.name }}</p>
-          </div>
-          <p class="message">{{ card.message }}</p>
+    <h1>My testimonials</h1>
+    <div class="container">
+      <div class="card" v-for="card in cards" :key="card.id">
+        <div class="col1">
+          <img :src="card.image" alt="" class="test-img" />
+          <div class="title"><p>{{ card.title }}</p></div>
         </div>
-        <div class="card card0"></div>
+        <div class="col2">
+          <div class="name">{{ card.name }}</div>
+          <div class="message">{{ card.message }}</div>
+        </div>
       </div>
-      <div class="overlay" alt=""></div>
-    </div>
-    <div class="buttoncontainer">
-      <button @click="prev()"><img src="../assets/prev.svg" alt="" /></button>
-      <button @click="next()"><img src="../assets/next.svg" alt="" /></button>
     </div>
   </section>
 </template>
+
 <script>
 export default {
   data() {
@@ -30,6 +23,7 @@ export default {
       cards: [
         {
           id: 1,
+          title: "Lecturer",
           image:
             "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/jason.jpg?raw=true",
           name: "Jason Wandrag",
@@ -38,6 +32,7 @@ export default {
         },
         {
           id: 2,
+          title: "Peer",
           image:
             "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/vusumzi.jpg?raw=true",
           name: "Vusumzi Msengana",
@@ -46,22 +41,25 @@ export default {
         },
         {
           id: 3,
+          title: "Peer",
           image:
             "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/lihle.jpg?raw=true",
           name: "Lihle Goliath",
           message:
-            "Focused and diligent to his work. Has a great eye for creativity and visualization towards his ideas, this means he knows what he want in life. He would be a great assert wherever he goes.",
+            "Focused and diligent to his work. Has a great eye for creativity and visualization towards his ideas, this means he knows what he want in life. He would be a great asset wherever he goes.",
         },
         {
           id: 4,
-          name: "Sindile Kula",
+          title: "Peer",
           image:
             "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/sindile.jpg?raw=true",
+          name: "Sindile Kula",
           message:
             "Joshua is a bright young man with a creative mind. He like to accomplish things at his own pace and according to his own preferences. He is highly diligent and hardworking when it comes to his career.",
         },
         {
           id: 5,
+          title: "Peer",
           image:
             "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/raaid.jpg?raw=true",
           name: "Raaid Abdullatief",
@@ -70,6 +68,7 @@ export default {
         },
         {
           id: 6,
+          title: "Peer",
           image:
             "https://github.com/0xjoshva/portfolio-vue/blob/main/src/assets/tristan.jpg?raw=true",
           name: "Tristan Daniels",
@@ -79,121 +78,85 @@ export default {
       ],
     };
   },
-  methods: {
-    prev() {
-      this.$refs.container.scrollLeft -= 295;
-    },
-    next() {
-      this.$refs.container.scrollLeft += 295;
-    },
-  },
 };
 </script>
 <style scoped>
 section {
-  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
 }
 h1 {
-  width: 40%;
-  color: white;
   font-family: "Poppins";
-  font-size: 36px;
+  font-style: normal;
   font-weight: 600;
-  margin: 0 auto;
+  font-size: 36px;
+  line-height: 54px;
+  color: white;
+  padding-bottom: 1.3rem;
 }
-.panel {
-  scroll-snap-align: start;
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 .card {
-  height: 318px;
-  min-width: 283px;
-  background: var(--panel);
-  border-radius: 7px;
-  z-index: 1;
-  padding: 1rem;
-  font-family: "Poppins";
-  box-shadow:10px 0px 0px 0px #1b1b3062;
-}
-#container {
+  background: #2e2e48;
+  width: 100%;
+  height: auto;
+  padding: 1.4rem;
+  border-radius: 10px;
   display: flex;
-  width: fit-content;
-  max-width: 935px;
-  column-gap: 2rem;
-  margin: 0 auto;
-  margin-top: 1.5rem;
-  position: relative;
-  z-index: 0 !important;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
+  column-gap: 1.4rem;
 }
-#container::-webkit-scrollbar {
-  display: none;
-}
-.overlay {
-  position: relative;
-  margin: 0 auto;
-  top: -318px;
-  width: 935px;
-  height: 318px;
-  background: linear-gradient(
-    90deg,
-    #232339 7.01%,
-    rgba(35, 35, 57, 0.83) 20.37%,
-    rgba(35, 35, 57, 0) 38.01%,
-    rgba(35, 35, 57, 0) 64.77%,
-    rgba(35, 35, 57, 0.86) 82.56%,
-    #232339 95.67%
-  );
-}
-.btn-container {
-  display: flex;
-}
-.buttoncontainer {
-  display: flex;
-  width: 40%;
-  margin: 0 auto;
-  justify-content: space-between;
-}
-.buttoncontainer button {
-  background: none;
-  outline: none;
-  border: none;
-  position: relative;
-  z-index: 10 !important;
-  color: white;
-  top: -31rem;
-  transition: 0.1s all ease-in-out;
-}
-.buttoncontainer button:active {
-  transform: scale(1.3);
-}
-.buttoncontainer button:hover {
-}
-
-#profile-pic {
+.test-img {
+  border-radius: 10px;
+  min-width: 72px;
   height: 72px;
-  width: 72px;
-
-  border-radius: 3px;
-  box-shadow: -5px -5px 0px 0px #1b1b3062;
-}
-.head {
-  display: flex;
-}
-.message {
-  padding-top: 1rem;
-  color: var(--text);
+  object-fit: cover;
 }
 .name {
-  font-size: 18px;
   color: white;
-  display: flex;
-  align-self: center;
-  justify-self: center;
-  padding-left: 1rem;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.card0{
-  opacity: .4;
+.message{
+  color: var(--Text, #88889F);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.title{
+  background: #3F3F5C;
+  border-radius: 2px;
+  display: flex;
+padding: 0px 3px;
+justify-content: center;
+align-items: center;
+
+align-self: center;
+width: fit-content;
+margin: 0 auto;
+
+}
+.title p{
+  color: #FFF;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.col1{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 </style>

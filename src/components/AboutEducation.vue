@@ -15,7 +15,7 @@
             <p class="date">Dec 2021</p>
             <div class="location">
               <img src="../assets/pin.svg" alt="" />
-              <p>Constantia, Western Cape</p>
+              <p>Lansdowne, Western Cape</p>
             </div>
           </div>
         </div>

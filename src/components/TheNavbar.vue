@@ -9,13 +9,13 @@
           <router-link to="/projects" class="router-link pages"
             >Projects</router-link
           >
-          <router-link to="/blog" class="router-link pages">Blog</router-link>
+          <router-link to="/contact" class="router-link pages">Contact</router-link>
         </div>
-        <router-link to="/contact" class="router-link button"
-          ><p>Hire me</p>
-          <!-- <img src="../assets/arrow.svg" alt=""
-        /> -->
-      </router-link>
+        <!-- <router-link to="/contact" class="router-link button"
+          ><p>Contact</p>
+          <img src="../assets/arrow.svg" alt=""
+        />
+      </router-link> -->
       </div>
     </nav>
 </template>
@@ -56,7 +56,7 @@ a {
 }
 .logo {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .pages {
   font-size: 1.1rem;
