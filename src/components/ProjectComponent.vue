@@ -84,7 +84,7 @@ export default {
           id: 2,
           name: "Tip Calculator",
           image:
-            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/CALCuu.svg",
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/CALC.svg",
           description:
             "A handy tip calculator app to quickly and accurately calculate tips for your dining bills.",
           link: "https://admirable-begonia-dfe568.netlify.app/"
@@ -93,7 +93,7 @@ export default {
           id: 3,
           name: "Pomodoro Timer",
           image:
-            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/timer-icon.png",
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/TIM.svg",
           description:
             "A timer with dynamic settings and a progress circle display, perfect for work or study.",
           link: "https://codepen.io/0xjoshva/full/YzOyJmm",
@@ -102,7 +102,7 @@ export default {
           id: 4,
           name: "Quote Generator",
           image:
-            "https://github.com/0xjoshva/newportfolio-vue/blob/main/src/assets/twitter.png?raw=true",
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/QUO.svg",
           description: "A tool for generating random quotes in a single click.",
           link: "https://admirable-dodol-162f1a.netlify.app/"
         },
