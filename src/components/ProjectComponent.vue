@@ -84,7 +84,7 @@ export default {
           id: 2,
           name: "Tip Calculator",
           image:
-            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/a9e221a29778e5771a2617991bec29f74259f253/src/assets/ecommerce.svg",
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/CALC.svg",
           description:
             "A handy tip calculator app to quickly and accurately calculate tips for your dining bills.",
           link: "https://admirable-begonia-dfe568.netlify.app/"
