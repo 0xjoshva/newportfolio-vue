@@ -4,8 +4,8 @@
       <!-- <h1 id="header">Summary</h1> -->
       <div class="paragraphs">
         <p>
-          I am a self starter with a passion for development <br> view my full
-          <a href="./" target="_blank">resume here</a>.
+          I am a self starter with a passion for development <br> download my full
+          <a href="https://github.com/0xjoshva/newportfolio-vue/raw/main/src/assets/JoshuaSteedCV.pdf" download="JoshuaSteedCV.pdf">resume here</a>.
         </p>
       </div>
     </div>
