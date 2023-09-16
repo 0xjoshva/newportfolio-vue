@@ -93,7 +93,7 @@ export default {
           id: 3,
           name: "Pomodoro Timer",
           image:
-            "https://github.com/0xjoshva/newportfolio-vue/blob/main/src/assets/newreal.png?raw=true",
+            "https://raw.githubusercontent.com/0xjoshva/newportfolio-vue/main/src/assets/timer-icon.png",
           description:
             "A timer with dynamic settings and a progress circle display, perfect for work or study.",
           link: "https://codepen.io/0xjoshva/full/YzOyJmm",
