@@ -217,7 +217,7 @@ textarea:focus {
   color: var(--text);
   display: flex;
   width: 639px;
-  justify-content: end;
+  justify-content: flex-end;
   position: relative;
   transform: translate(0, 23.3rem);
   z-index: 5;

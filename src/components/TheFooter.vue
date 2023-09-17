@@ -3,8 +3,12 @@
     <div class="container">
       <div class="info">
         <div class="icons">
-          <a href="https://www.linkedin.com/in/0xjoshuasteed/" target="_blank"><img src="../assets/linkedin.svg" alt="" /></a>
-          <a href="https://github.com/0xjoshva" target="_blank"><img src="../assets/github.svg" alt="" /></a>
+          <a href="https://www.linkedin.com/in/0xjoshuasteed/" target="_blank"
+            ><img src="../assets/linkedin.svg" alt=""
+          /></a>
+          <a href="https://github.com/0xjoshva" target="_blank"
+            ><img src="../assets/github.svg" alt=""
+          /></a>
         </div>
         <div class="contact">
           <p>cape town, western cape</p>
@@ -15,12 +19,18 @@
         </div>
       </div>
       <div class="nav">
-        <router-link to="/" class="router-link">Home</router-link>
-        <!-- <router-link to="blog" class="router-link">Blog</router-link> -->
-        <router-link to="/projects" class="router-link">Projects</router-link>
-        <!-- <router-link to="/tools" class="router-link">Tools</router-link> -->
-        <router-link to="/about" class="router-link">About</router-link>
-        <router-link to="/contact" class="router-link">Contact</router-link>
+        <router-link @click="scrollToTop" to="/" class="router-link"
+          >Home</router-link
+        >
+        <router-link @click="scrollToTop" to="/about" class="router-link"
+          >About</router-link
+        >
+        <router-link @click="scrollToTop" to="/projects" class="router-link"
+          >Projects</router-link
+        >
+        <router-link @click="scrollToTop" to="/contact" class="router-link"
+          >Contact</router-link
+        >
       </div>
     </div>
   </Footer>
@@ -40,10 +50,50 @@
     </svg>
   </div>
 </template>
+
 <script>
-export default {};
+export default {
+  methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    },
+  },
+};
 </script>
+
 <style scoped>
+/* Your existing styles remain the same */
+
+/* Scroll button styles */
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.scroll-button:hover {
+  opacity: 0.8;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0;
+}
 Footer {
   margin-top: 5rem;
   height: 15rem;

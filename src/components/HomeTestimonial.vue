@@ -1,8 +1,8 @@
 <template>
   <section>
     <h1>My testimonials</h1>
-    <div class="container">
-      <div class="card" v-for="card in cards" :key="card.id">
+    <div class="container" :class="{'stackedContainer' : !stackClicked}">
+      <div class="card" v-for="card in cards" :key="card.id" :class="{'stack' : !stackClicked}" @click="stackClicked = !stackClicked" >
         <div class="col1">
           <img :src="card.image" alt="" class="test-img" />
           <div class="title"><p>{{ card.title }}</p></div>
@@ -76,11 +76,13 @@ export default {
             " Joshua is a passionate and goal-driven person. He always focuses on the task at hand and works to the best of his ability.",
         },
       ],
+      stackClicked: false
     };
   },
 };
 </script>
 <style scoped>
+
 section {
   display: flex;
   flex-direction: column;
@@ -110,6 +112,8 @@ h1 {
   border-radius: 10px;
   display: flex;
   column-gap: 1.4rem;
+  transition: ease 1s all;
+  cursor: pointer;
 }
 .test-img {
   border-radius: 10px;
@@ -158,5 +162,79 @@ line-height: normal;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+}
+.stack:nth-of-type(1) {
+  position: relative;
+  z-index: 6;
+}
+
+.stack:nth-of-type(2) {
+  position: relative;
+  transform: translate(0, -1rem) rotate(2deg);
+  filter: brightness(95%) opacity(90%);
+  z-index: 5;
+  margin-top: -150px;
+}
+
+.stack:nth-of-type(3) {
+  filter: brightness(93%) opacity(100%);
+  position: relative;
+ transform: translate(0, -2rem) rotate(-2deg);
+  z-index: 4;
+  margin-top: -150px;
+}
+
+.stack:nth-of-type(4) {
+  position: relative;
+  transform: translate(0, -3rem) rotate(-4deg);
+  z-index: 3;
+   filter: brightness(91%) opacity(80%);
+   margin-top: -150px;
+}
+
+.stack:nth-of-type(5) {
+  position: relative;
+  transform: translate(0, -3rem) rotate(4deg);
+  z-index: 2;
+  filter: brightness(85%) opacity(80%);
+  margin-top: -150px;
+}
+
+.stack:nth-of-type(6) {
+  position: relative;
+  transform: translateY(-3rem);
+  z-index: 1;
+  filter: brightness(85%) opacity(80%);
+  margin-top: -150px;
+}
+.card:nth-of-type(1){
+  position: relative;
+z-index: 6;
+}
+.card:nth-of-type(2){
+  position: relative;
+z-index: 5;
+}
+.card:nth-of-type(3){
+  position: relative;
+z-index: 4;
+}
+.card:nth-of-type(4){
+  position: relative;
+z-index: 3;
+}
+.card:nth-of-type(5){
+  position: relative;
+z-index: 2;
+}
+.card:nth-of-type(6){
+  position: relative;
+z-index: 1;
+}
+.container{
+transition: ease all 1s;
+}
+.stackedContainer{
+  transition: ease all 1s;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <h1>Get into contact</h1>
   <p class="text">
-    Fill up the form and I will get back <BR></BR> to you within 24 hours.
+    Fill out the form and I will get back <BR></BR> to you within 24 hours.
   </p>
   <ContactForm />
 </template>
