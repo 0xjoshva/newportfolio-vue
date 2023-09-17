@@ -12,7 +12,7 @@
             </div>
           </div>
           <div class="details">
-            <p class="date">Dec 2021</p>
+            <p class="date">Sep 2022</p>
             <div class="location">
               <img src="../assets/pin.svg" alt="" />
               <p>Lansdowne, Western Cape</p>
