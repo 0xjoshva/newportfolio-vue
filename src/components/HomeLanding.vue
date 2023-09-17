@@ -22,9 +22,9 @@
         </p>
         <p>
           In 2023 I landed a job at JustSolve as an intern software developer
-          where I got the opportunity to work on a variety of projects of
-          projects, collaborate within teams and continue to learn and increase
-          my coding proficiency.
+          where I got the opportunity to work on a variety of projects,
+          collaborate within teams and continue to learn and increase my coding
+          proficiency.
         </p>
         <p>
           Aside from development, I enjoy going to the gym everyday to stay
